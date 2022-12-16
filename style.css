@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: url(/01-mask-image//bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.el {
+  width: 100vh;
+  height: 100vh;
+  background-image: url(/01-mask-image//truck.jpg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  mask-image: url(/01-mask-image/path.svg);
+  -webkit-mask-image: url(/01-mask-image/path.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center center;
+}
